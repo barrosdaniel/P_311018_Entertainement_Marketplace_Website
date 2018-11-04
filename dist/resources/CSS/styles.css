@@ -2,10 +2,12 @@
 /* Variables */
 /* ---------------------------------------- */
 :root {
+  --background-color: #252525;
+  --navbar-color: rgba(51, 51, 51, 0.90);
   --primary-color: #EA2027;
   --primary-color-hover: #c51319;
   --secondary-color: #0540ab;
-  --secondary-color-hover: #0540ab;
+  --secondary-color-hover: #032d7a;
   --light-color: #f3f3f3;
 }
 
@@ -21,7 +23,7 @@
 }
 
 html {
-  background-color: #252529;
+  background-color: var(--background-color);
   color: #eee;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 20px;
@@ -52,7 +54,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #ccc;
+  color: var(--light-color);
 }
 
 @media screen and (max-width: 580px) {
@@ -64,6 +66,11 @@ a {
 /* Sections */
 .section {
   padding: 2rem 0;
+}
+
+.light-background {
+  background-color: var(--light-color);
+  color: var(--background-color);
 }
 
 .section-head,
@@ -115,7 +122,7 @@ a.button-secondary:link,
 a.button-secondary:visited {
   border: 1px solid var(--secondary-color);
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--light-color);
 }
 
 a.button-secondary:hover,
@@ -145,7 +152,7 @@ a.button-secondary:active {
 nav {
   height: 2.6rem;
   width: 100%;
-  background-color: #333;
+  background-color: var(--navbar-color);
   position: fixed;
 }
 
@@ -301,3 +308,12 @@ nav a#openup {
 /* ---------------------------------------- */
 /* Music section */
 /* ---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+/* Video section */
+/* ---------------------------------------- */
+a#video-mockup {
+  margin-bottom: 1rem;
+}
