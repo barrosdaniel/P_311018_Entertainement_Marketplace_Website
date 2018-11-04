@@ -44,12 +44,16 @@ html {
   padding: 0 3rem;
 }
 
-p {
-  font-size: 0.9rem;
+.text-center {
+  text-align: center;
 }
 
 .lead {
   font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
 }
 
 img {
@@ -350,4 +354,43 @@ section#gift-cards p {
 
 section#gift-cards a {
   margin: 3rem 0;
+}
+
+
+
+/* ---------------------------------------- */
+/* Footer Bottom */
+/* ---------------------------------------- */
+footer .footer-columns {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+footer .footer-columns ul {
+  list-style: none;
+}
+
+footer .footer-columns li:first-child {
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--navbar-color);
+  margin-bottom: 0.6rem;
+}
+
+
+
+/* ---------------------------------------- */
+/* Footer Bottom */
+/* ---------------------------------------- */
+div.footer-bottom {
+  padding: 0.5rem;
+  background-color: var(--navbar-color);
+}
+
+div.footer-bottom p {
+  font-size: 0.8rem;
 }
