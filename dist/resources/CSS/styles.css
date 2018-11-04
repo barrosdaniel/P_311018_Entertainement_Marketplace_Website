@@ -1,4 +1,19 @@
+/* ---------------------------------------- */
+/* Variables */
+/* ---------------------------------------- */
+:root {
+  --primary-color: #EA2027;
+  --primary-color-hover: #c51319;
+  --secondary-color: #0540ab;
+  --secondary-color-hover: #0540ab;
+  --light-color: #f3f3f3;
+}
+
+
+
+/* ---------------------------------------- */
 /* Resets */
+/* ---------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +30,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* Website CSS */
+
+
+/* ---------------------------------------- */
 /* Global rules */
+/* ---------------------------------------- */
 .container {
   max-width: 1180px;
   text-align: center;
@@ -28,15 +46,104 @@ html {
   font-size: 1rem;
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
   }
 }
 
+/* Sections */
+.section {
+  padding: 2rem 0;
+}
+
+.section-head,
+.section-subhead,
+.section-lead {
+  padding-bottom: 1rem;
+}
+
+.section-head {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.section-subhead {
+  font-size: 1.2rem;
+}
+
+.section-lead {
+  font-size: 0.9rem;
+}
+
+.text-light {
+  font-size: 0.7rem;
+}
+
+/* Buttons */
+a.button {
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+a.button-primary:link,
+a.button-primary:visited {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+a.button-primary:hover,
+a.button-primary:active {
+  border: 1px solid var(--primary-color-hover);
+  background-color: var(--primary-color-hover);
+}
+
+a.button-secondary:link,
+a.button-secondary:visited {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+a.button-secondary:hover,
+a.button-secondary:active {
+  border: 1px solid var(--secondary-color-hover);
+  background-color: var(--secondary-color-hover);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+
+
+/* ---------------------------------------- */
 /* Navigation Section */
+/* ---------------------------------------- */
 nav {
-  height: 52px;
+  height: 2.6rem;
   width: 100%;
   background-color: #333;
   position: fixed;
@@ -90,7 +197,8 @@ nav a#openup {
     position: relative;
   }
 
-  nav a, nav a#branding {
+  nav a,
+  nav a#branding {
     text-align: left;
     width: 100%;
     text-indent: 25px;
@@ -126,7 +234,8 @@ nav a#openup {
 
 }
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   content: "";
   display: table;
 }
@@ -141,15 +250,20 @@ nav a#openup {
 
 /* For IE 6/7 (trigger hasLayout) */
 
+
+
+/* ---------------------------------------- */
+/* Showcase section */
+/* ---------------------------------------- */
 #showcase {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../IMG/showcase.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/showcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow-y: hidden;
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow-y: hidden;
 }
 
 #showcase .container {
@@ -183,3 +297,7 @@ nav a#openup {
   }
 
 }
+
+/* ---------------------------------------- */
+/* Music section */
+/* ---------------------------------------- */
