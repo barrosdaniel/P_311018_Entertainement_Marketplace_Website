@@ -44,6 +44,10 @@ html {
   padding: 0 3rem;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 .lead {
   font-size: 1rem;
 }
@@ -316,4 +320,34 @@ nav a#openup {
 /* ---------------------------------------- */
 a#video-mockup {
   margin-bottom: 1rem;
+}
+
+
+
+/* ---------------------------------------- */
+/* Entertainment section */
+/* ---------------------------------------- */
+section#entertainment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/dist/resources/IMG/section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* ---------------------------------------- */
+/* Entertainment section */
+/* ---------------------------------------- */
+section#gift-cards div.gift-cards-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+section#gift-cards p {
+  padding-bottom: 1rem;
+}
+
+section#gift-cards a {
+  margin: 3rem 0;
 }
