@@ -1,0 +1,23 @@
+{
+  "name": "P_311018_Entertainement_Marketplace_Website",
+  "version": "1.0.0",
+  "description": "UNSPLASH IMAGES\r showcase.jpg, Daria Nepriakhina\r section-bg.jpg, Patrick Fore",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barrosdaniel/P_311018_Entertainement_Marketplace_Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barrosdaniel/P_311018_Entertainement_Marketplace_Website/issues"
+  },
+  "homepage": "https://barrosdaniel.github.io/P_311018_Entertainement_Marketplace_Website",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
